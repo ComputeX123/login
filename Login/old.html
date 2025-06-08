@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ComputeX</title>
+  <link rel="icon" href="unnamed(5).png" type="image/x-icon" />
+  <link rel="stylesheet" href="index.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="logo new.png" type="image/icon type">
+  <!-- <script type = "text/javascript">  
+  function signIn(form) {
+  // Google's OAuth 2.0 endpoint for requesting an access token
+  var oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
+
+  // Create <form> element to submit parameters to OAuth 2.0 endpoint.
+  var form = document.createElement('form');
+  form.setAttribute('method', 'GET'); // Send as a GET request.
+  form.setAttribute('action', oauth2Endpoint);
+
+  // Parameters to pass to OAuth 2.0 endpoint.
+  var params = {
+    'client_id': '508493504686-09augjkqp51umva8pn6ou0fcdsefleb0.apps.googleusercontent.com',
+    'redirect_uri': 'https://profile.computex.repl.co/profile.html',
+    'response_type': 'token',
+    'scope': 'https://www.googleapis.com/auth/userinfo.profile',
+    'include_granted_scopes': 'true',
+    'state': 'pass-through value'
+  };
+
+  // Add form parameters as hidden input values.
+  for (var p in params) {
+    var input = document.createElement('input');
+
+    input.setAttribute('type', 'hidden');
+    input.setAttribute('name', p);
+    input.setAttribute('value', params[p]);
+    form.appendChild(input);
+  }
+
+  // Add form to page and submit it to open the OAuth 2.0 endpoint.
+  document.body.appendChild(form);
+  form.submit();
+}
+  </script> -->
+</head>
+
+<body>
+  <!-- NAVBAR CREATION -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="https://home-page--computex.repl.co/">Home</a>
+      <a href="https://contact-us.computex.repl.co/">Contact</a>
+    </nav>
+ 
+  </header>
+  <!-- LOGIN FORM CREATION -->
+  <div class="background"></div>
+  <div class="container">
+    <div class="item">
+      <h2 class="logo"><img src="unnamed (5).png" height=100 width=105></h2>
+      <div class="text-item">
+        <h2>ComputeX<br><span>
+            Login Portal
+          </span></h2>
+        <p>Hello and welcome to the login page of ComputeX. Enter your credentials and enter a world extensively
+          designed for you to learn a plethora of computer science knowledge.</p>
+        <div class="social-icon">
+          <a href="https://twitter.com/ComputeXDPS"><i class='bx bxl-twitter'></i></a>
+          <a href="https://www.youtube.com/channel/UCY1pUEpcAyBaOrNx3OCw5gw"><i class='bx bxl-youtube'></i></a>
+          <a href="https://www.instagram.com/computex._/"><i class='bx bxl-instagram'></i></a>
+          <a href="mailto:computex.dps2023@gmail.com">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255);transform: ;msFilter:;"><path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg>
+
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="login-section">
+      <div class="form-box login">
+        <form action="">
+          <h2>Sign In</h2>
+          <div class="input-box" required>
+            <span class="icon"><i class='bx bxs-envelope'></i></span>
+            <input type="email">
+            <label>Email</label>
+          </div>
+          <div class="input-box" required>
+            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+            <input type="password">
+            <label>Password</label>
+          </div>
+          <div class="remember-password">
+            <label for=""><input type="checkbox">Remember Me</label>
+          </div>
+          <button class="btn">Sign In</button>
+          <input type = "button" onclick = "signIn()" class="btn" value="Log in with Google">
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+<script src="script.js"></script>
+</html>
